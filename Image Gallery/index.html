@@ -1,0 +1,44 @@
+<!-- !DOCTYPE html> -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1 class="title">Image Gallery</h1>
+
+  <!-- Filters (Bonus) -->
+  <div class="filters">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('nature')">Nature</button>
+    <button onclick="filterImages('city')">City</button>
+  </div>
+
+  <!-- Gallery Grid -->
+  <div class="gallery">
+    
+    <img src="download.jpg" alt="nature" class="nature">
+    <img src="download n1.jpg" alt="nature" class="nature">
+    <img src="download n2.jpg" alt="nature" class="nature">
+    <!-- <img src="images (1).jpg" alt="City" class="city"> -->
+    <img src="download imm.jpg" alt="city" class="city">
+    <img src="images im.jpg" alt="city" class="city">
+    <img src="D.jpg" alt="city" class="city">
+    <img src="image H.jpg" alt="city" class="city">
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" src="">
+    <div class="navigation">
+      <button onclick="prevImage()">❮ Prev</button>
+      <button onclick="nextImage()">Next ❯</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
